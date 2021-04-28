@@ -7,6 +7,15 @@ export const showHeatMap = function() {
         modal.style.display = 'block';
         backdrop.style.display = 'block';
     })
+
+    const showAnchor = document.getElementById('anchor-show-heatmap');
+    
+    showAnchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        modal.style.display = 'block';
+        backdrop.style.display = 'block';
+    })
+
 }
 
 
