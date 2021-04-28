@@ -29,7 +29,6 @@ class Attacks {
         d3.csv('./datasets/test.csv')
             .then(function (d) {
                 d.forEach((attack) => {
-                    console.log(attack)
                         if (Number(attack.severity) === 3){
                             this.render(attack, [attack.x, attack.y], "Severe", tooltip);
                         } else if (Number(attack.severity) === 2){
@@ -42,7 +41,6 @@ class Attacks {
     }
 
     render(attack, position, severity, tooltip) {
-        console.log(attack);
 
         var mouseover = function(event, d) {
                 tooltip
