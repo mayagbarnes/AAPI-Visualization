@@ -1,0 +1,31 @@
+.section {
+  border-bottom: 1px solid $light-gray;
+  font-family: $sans-serif;
+  font-size: 12px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  ul li {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  li:hover {
+    background-color: $light-gray;
+  }
+
+  li:last-child {
+    font-size: 10px;
+    align-items: center;
+  }
+
+  li:last-child:hover {
+    text-decoration: underline black;
+    background-color: transparent;
+  }
+}
+

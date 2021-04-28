@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stop Asian Hate</title>
+    
+    <script src="./d3.js"></script>
+    <script src="./d3-hexbin.min.js"></script>
+    <script src="./d3-contour.min.js"></script>
+    <script type="text/javascript" src="./bundle.js"></script>
+
+    <link rel="stylesheet" type='text/css' href="./output.css">
+  </head>
+  <body>
+    <header class="main-nav">
+      <nav class="left-nav">
+        <ul>
+          <li id="sections-sidebar-btn">
+            <i class="fa fa-bars"></i>
+            <span>sections</span>
+          </li>
+          <li id="search-modal-btn">
+            <i class="fa fa-search"></i>
+            <span>search</span>
+          </li>
+        </ul>
+      </nav>
+      <nav class="right-nav">
+        <ul>
+          <li>
+            <button type="button">SUBSCRIBE NOW</button>
+          </li>
+          <li>
+            <button type="button">LOG IN</button>
+          </li>
+          <li id="gear">
+            <i class="fas fa-cog"></i>
+            <ul id="gear-dropdown" class="gear-dropdown hidden">
+              <li>
+                <ul class="editions">
+                  <span class="dropdown-subtitle">Edition</span>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">Javascript</a></li>
+                  <li><a href="#">Ruby</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="dropdown-subtitle">Help</span>
+                <ul class="help">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="masthead">
+      <nav class="language-nav">
+          <ul>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">Ruby</a></li>
+          </ul>
+      </nav>
+
+      <nav class="logo">
+          <img src="images/logo.png">
+      </nav>
+
+      <nav class="masthead-links">
+              <ul>
+                  <li> <time> Tuesday, October 18, 2016 </time> </li>
+                  <li>
+                      <i class="far fa-newspaper"></i>
+                      <a href="#">Today’s Paper </a>
+                  </li>
+                  <li>
+                      <i class="fas fa-video"></i>
+                      <a href="#">Video </a>
+                  </li>
+                  <li><button>77°F</button></li>
+                  <li><button>AAO <strong>+100%</strong></button></li>
+              </ul>
+          </nav>
+    </header>
+
+        <nav class="section">
+          <ul>
+            <li><a href="#"> World </a></li>
+            <li><a href="#"> San Francisco </a></li>
+            <li><a href="#"> New York</a></li>
+            <li><a href="#"> Bootcamp Prep </a></li>
+            <li><a href="#"> Jumpstart </a></li>
+            <li><a href="#"> Online </a></li>
+            <li><a href="#"> Marketing </a></li>
+            <li><a href="#"> Sales </a></li>
+            <li><a href="#"> TalentMatch </a></li>
+            <li><a href="#"> Alumni </a></li>
+            <li><a href="#"> ALL </a></li>
+          </ul>
+        </nav>
+
+      <section class="main-content group">
+      <section class="main-story col col-2-3">
+          <section class="col col-1-3">
+            <a href="#"><h1>Launching the New React/Redux Curriculum</h1></a>
+            <p class="byline">By APP ACADEMY INSTRUCTIONAL TEAM</p>
+            <ul>
+              <li>It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. On top of that, it provides a great developer experience, such as live code editing combined with a time traveling debugger.</li>
+              <li>The whole state of your app is stored in an object tree inside a single store.
+                  The only way to change the state tree is to emit an action, an object describing what happened.
+                  To specify how the actions transform the state tree, you write pure reducers.</li>
+            </ul>
+            <a href="#" class="comments"><i class="fa fa-message"></i>1738 Comments</a>
+          </section>
+          <section class="col col-2-3">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/ARe9FupzuOA" frameborder="0" allowfullscreen></iframe>
+            <p>Warning: This video will make you want to change your career</p>
+            <article>
+              <hr>
+              <a href="#"><header>Where Are They Now?</header></a>
+              <p class="byline">By APP ACADEMY ALUMNI</p>
+              <p>First hand stories from App Academy graduates about transitioning to engineering positions at top tech companies in San Francisco.</p>
+            </article>
+            <article>
+              <hr>
+              <a href="#"><header>Cat Academy</header></a>
+              <p class="byline">By APP ACADEMY DIRECTOR OF PRODUCTS</p>
+              <p>App Academy's latest product targets those interested in owning the popular feline companion by providing a curated cat care curriculum.</p>
+            </article>
+          </section>
+            <hr class="hr-top">
+            <hr class="hr-bottom">
+      </section>
+      <section class="opinion cf">
+        <a href="#"><h2>The Opinion Pages</h2></a>
+        <section class="col col-1-2">
+              <p class="kicker">Op-Ed Contributor</p>
+              <a href="#"><header>Will Javascript ever be as easy as Ruby?</header></a>
+              <p>
+                Javscript continues to advance with the newly released EcmaScript7 but it still doesn't quite read like Ruby.
+              </p>
+            <ul class="opinions-list">
+              <li>Torvalds: When I Was Almost Wrong</li>
+              <li>Knuth: Art of Programming</li>
+              <li>Lovelace: The First Algorithm</li>
+              <li>Hopper: The First Bug</li>
+              <li>Thompson: Go C Unix</li>
+              <li>Carmack: My Virtual Reality</li>
+              <li>Stallman: Free Speech Not Free Coffee</li>
+            </ul>
+        </section>
+        <section class="col col-1-2">
+          <p class="kicker">Operations</p>
+          <a href="#"><header>App Academy New York Has A Brand New Office</header></a>
+          <p class="byline">By NY OPERATIONS</p>
+          <p>The new space features hardwood floors and brick walls for a modern technology space with an aura for learning.</p>
+          <div class="thumbnail">
+            <img src="/assets/new_office.jpg" alt="app academy new york office">
+          </div>
+        </section>
+        <section class="opinion-sign-up">
+          <a href="#"><header>Opinion Today, in your Inbox</header></a>
+          <p>Each weekday, get though-provoking commentary from our columnists and contributors.</p>
+          <form>
+            <section class="input-wrapper">
+              <input type="text" placeholder="Get the Opinion newsletter by email">
+              <button>Sign Up</button>
+            </section>
+          </form>
+          <center>
+            <small>We'll also send offers to join the App Academy Bootcamp. You can never unsubscribe.</small>
+          </center>
+          <hr class="hr-top">
+          <hr class="hr-bottom">
+        </section>
+      </section> 
+      <section id="overlay" class="overlay hidden"></section>
+    </section>
+
+    <div class="backdrop">
+      <section>
+          <button id="show-heatmap"><img class='head-outline' src="./images/head_outline.jpg" alt="Name"></button>
+          <div class="heat-map-modal">
+          </div>
+      </section>  
+    </div>
+  </body>
+</html>

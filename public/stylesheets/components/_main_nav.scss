@@ -1,0 +1,54 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  // border-bottom: 1px solid $light-gray;
+}
+
+.left-nav > ul,
+.right-nav > ul {
+  display: flex;
+  align-items: center;
+}
+
+.left-nav {
+  padding: 5px;
+  > ul {
+    > li {
+      margin-right: 10px;
+      font-family: $sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 6px;
+    }
+  }
+
+  span {
+
+  }
+}
+
+.right-nav  {
+  padding: 5px;
+  > ul {
+
+    > li {
+      margin-right: 2px;
+    }
+
+    > li:last-of-type {
+      font-size: 16px;
+      padding: 4px;
+    }
+  }
+  
+  i {
+
+  }
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+  background-color: $light-gray;
+  border-radius: 3px;
+}
