@@ -11214,7 +11214,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.location.hash) {
     root.setAttribute("include-html", window.location.hash.slice(2));
   }
-  Object(__WEBPACK_IMPORTED_MODULE_0__includeHTML__["a" /* includeHTML */])();
+  Object(__WEBPACK_IMPORTED_MODULE_1__hashRouter_js__["a" /* router */])();
 });
 
 // let isbn = '0201558025';
@@ -12218,19 +12218,34 @@ module.exports = function spread(callback) {
 // This is essentially a a router. If the hash of the window location
 // changes, this file will attempt to load the appropriate HTML file
 // and apply whatever set up is required with a `then` statement
-window.onhashchange = () => {
-  const root = document.getElementById("root");
-  root.setAttribute("include-html", window.location.hash.slice(2));
 
+const router = () => {
   switch (window.location.hash.slice(2)) {
+    case "home":
+      Object(__WEBPACK_IMPORTED_MODULE_0__includeHTML__["a" /* includeHTML */])();
+      return;
     case "heatmap":
       Object(__WEBPACK_IMPORTED_MODULE_0__includeHTML__["a" /* includeHTML */])().then(() => {
         Object(__WEBPACK_IMPORTED_MODULE_1__show_heatmap__["a" /* drawHeatMap */])();
       });
       return;
+    // case "treemap":
+    //   includeHTML().then(() => {
+    //     drawTreeMap();
+    //   });
+    //   return;
     default:
       return;
   }
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = router;
+
+
+window.onhashchange = () => {
+  const root = document.getElementById("root");
+  root.setAttribute("include-html", window.location.hash.slice(2));
+
+  router();
 };
 
 /***/ }),
