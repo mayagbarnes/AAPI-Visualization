@@ -1,12 +1,12 @@
-.heat-map-modal {
-    display: none;  
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    width: 100%;
-}
+// .heat-map-modal {
+//     display: block;  
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     background-color: white;
+//     width: 100%;
+// }
 
 .heat-map-modal>svg {
     background-image: url("../images/body_outline.jpeg");
@@ -14,3 +14,53 @@
     background-size: 90%, 90%;
     background-position: center;
 }
+
+#show-treemap {
+  border-color: inherit;
+  background-color: inherit;
+
+  img {
+    height: 35%;
+    width: 25%;
+  }
+}
+
+#show-heatmap {
+  border-color: inherit;
+  background-color: inherit;
+
+  img {
+    width: 45%;
+  }
+}
+
+
+rect.Chinese {
+  fill: url(#chinese);
+}
+
+rect.Korean {
+  fill: url(#korean);
+}
+
+rect.Vietnamese {
+  fill: url(#vietnamese);
+}
+
+rect.Filipino {
+  fill: url(#filipino);
+}
+
+rect.Japanese {
+  fill: url(#japanese);
+}
+
+rect.Other {
+  fill: rgb(20, 131, 33);
+}
+
+rect.Asian {
+  fill: rgb(37, 107, 182);
+}
+
+
