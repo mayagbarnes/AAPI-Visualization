@@ -27452,6 +27452,35 @@ class Treemap {
         }).attr("font-size", "18px").attr("font-weight", "700").attr("fill", "black");
 
         // attempting to add pattern to the rectangle to get flag
+
+        this.svg.data(treeData.leaves()[5]).append('svg:defs').append("svg:pattern").attr("id", "japanese").attr("width", function (d) {
+            return d.x1;
+        }).attr("height", function (d) {
+            return d.y1;
+        }).attr("patternUnits", "userSpaceOnUse").append("svg:image").attr("xlink:href", '../images/japanese.jpeg').attr("width", function (d) {
+            return d.x1 - d.x0 + 20;
+        }).attr("height", function (d) {
+            return d.y1 - d.y0 + 20;
+        }).attr("x", function (d) {
+            return d.x0 - 9;
+        }).attr("y", function (d) {
+            return d.y0 + 0;
+        });
+
+        this.svg.data(treeData.leaves()[4]).append('svg:defs').append("svg:pattern").attr("id", "filipino").attr("width", function (d) {
+            return d.x1;
+        }).attr("height", function (d) {
+            return d.y1;
+        }).attr("patternUnits", "userSpaceOnUse").append("svg:image").attr("xlink:href", '../images/philippines.jpeg').attr("width", function (d) {
+            return d.x1 - d.x0 + 50;
+        }).attr("height", function (d) {
+            return d.y1 - d.y0 + 50;
+        }).attr("x", function (d) {
+            return d.x0 - 25;
+        }).attr("y", function (d) {
+            return d.y0 + 2;
+        });
+
         this.svg.data(treeData.leaves()[3]).append('svg:defs').append("svg:pattern").attr("id", "vietnamese").attr("width", function (d) {
             return d.x1;
         }).attr("height", function (d) {
@@ -27461,23 +27490,23 @@ class Treemap {
         }).attr("height", function (d) {
             return d.y1 - d.y0 + 30;
         }).attr("x", function (d) {
-            return d.x0 - 10;
+            return d.x0 - 12;
         }).attr("y", function (d) {
-            return d.y0;
+            return d.y0 - 10;
         });
 
         this.svg.data(treeData.leaves()[1]).append('svg:defs').append("svg:pattern").attr("id", "korean").attr("width", function (d) {
             return d.x1;
         }).attr("height", function (d) {
             return d.y1;
-        }).attr("patternUnits", "userSpaceOnUse").append("svg:image").attr("xlink:href", '../images/korean_flag.jpeg').attr("width", function (d) {
+        }).attr("patternUnits", "userSpaceOnUse").append("svg:image").attr("xlink:href", '../images/korean_flag_1.jpeg').attr("width", function (d) {
             return d.x1;
         }).attr("height", function (d) {
-            return d.y1 + 10 - d.y0;
+            return d.y1 - d.y0 - 20;
         }).attr("x", function (d) {
             return d.x0;
         }).attr("y", function (d) {
-            return d.y0;
+            return d.y0 + 10;
         });
 
         this.svg.data(treeData.leaves()[0]).append('svg:defs').append("svg:pattern").attr("id", "chinese").attr("width", function (d) {
