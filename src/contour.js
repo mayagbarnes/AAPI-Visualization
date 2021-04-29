@@ -42,7 +42,7 @@
 //                 .range([ CONSTANTS.HEIGHT - margin.bottom, margin.top ]);
 //             this.svg.append("g")
 //                 .call(d3.axisLeft(y));
-            
+
 //         if(severity === "Severe") {
 //             this.svg.append("g")
 //                 .selectAll("dot")
@@ -70,7 +70,7 @@
 //             //     .attr("fill-opacity", CONSTANTS.OPACITY)
 //             //     .attr("stroke-width", "0.1px");
 //         } else if (severity === "Minor")  {
-          
+
 //             // Prepare a color palette
 //             var color = d3.scaleLinear()
 //                 .domain([0, 1]) // Points per square pixel.
@@ -83,7 +83,6 @@
 //                 .bandwidth(5)
 //                 (data)
 //             console.log(densityData)
-    
 
 //             this.svg.insert("g", "g")
 //                     .selectAll("path")
@@ -91,7 +90,7 @@
 //                     .enter().append("path")
 //                     .attr("d", d3.geoPath())
 //                     .attr("fill", function(d) { return color(d.value); })
-                    
+
 //             // this.svg.append("g")
 //             //     .selectAll(".hexagon")
 //             //     .data(hexbin([position]))
@@ -107,7 +106,6 @@
 //         }
 //     }
 
-    
 // }
 
 // export default Attacks;
