@@ -2,7 +2,7 @@ const axios = require("axios");
 
 // import Contours from './contour';
 import { includeHTML } from "./includeHTML";
-import "./hashRouter.js";
+import { router } from "./hashRouter.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   // This code will render the correct HTML file according to
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.location.hash) {
     root.setAttribute("include-html", window.location.hash.slice(2));
   }
-  includeHTML();
+  router();
 });
 
 // let isbn = '0201558025';
