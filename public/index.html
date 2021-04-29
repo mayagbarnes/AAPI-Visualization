@@ -8,7 +8,7 @@
     <script src="./d3-hexbin.min.js"></script>
     <script src="./d3-contour.min.js"></script>
     <script type="text/javascript" src="./bundle.js"></script>
-
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" type='text/css' href="./output.css">
   </head>
   <body>
@@ -28,13 +28,17 @@
       <nav class="right-nav">
         <ul>
           <li>
-            <button type="button">SUBSCRIBE NOW</button>
+            <a target="_blank" href="https://github.com/mayagbarnes" className='header-icons'>
+            <i class="fab fa-github">Github</i>
+          </a>
           </li>
           <li>
-            <button type="button">LOG IN</button>
+            <a target="_blank" href="https://www.linkedin.com/in/mayabarnes/" className='header-icons'>
+            <i class="fab fa-linkedin">LinkedIn</i>
+            </a>
           </li>
-          <li id="gear">
-            <i class="fas fa-cog"></i>
+          <!-- <li id="gear">
+            <p className='left-icon'>ICON</p> 
             <ul id="gear-dropdown" class="gear-dropdown hidden">
               <li>
                 <ul class="editions">
@@ -53,12 +57,17 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </header>
 
     <header class="masthead">
+      <nav class="date">
+          <time> Friday, April 30, 2021 </time>
+          <p>Today’s Paper</p>
+      </nav>
+
       <nav class="language-nav">
           <ul>
               <li><a href="#">CSS</a></li>
@@ -72,21 +81,9 @@
           <img src="images/logo.png">
       </nav>
 
-      <nav class="masthead-links">
-              <ul>
-                  <li> <time> Friday, April 30, 2021 </time> </li>
-                  <li>
-                      <i class="far fa-newspaper"></i>
-                      <a href="#">Today’s Paper </a>
-                  </li>
-                  <li>
-                      <i class="fas fa-video"></i>
-                      <a href="#">Video </a>
-                  </li>
-                  <li><button>77°F</button></li>
-                  <li><button>AAO <strong>+100%</strong></button></li>
-              </ul>
-          </nav>
+      <nav class="weather">
+          <p> 84°F Sunny </p>
+      </nav>
     </header>
 
         <nav class="section">
@@ -101,18 +98,28 @@
         </nav>
 
       <section class="main-content group">
-            <div>
+        <div class="grid-container">
+            <div class="one">
+                <a id="anchor-show-heatmap"><h1>An Illustration of Damage</h1></a>
+                <button id="show-heatmap"><img class='head-outline' src="./images/head_outline.jpg" alt="Name"></button>
+                <ul>
+                  <li></li>
+                </ul>
+                <ul>
+
+                </ul>
+            </div> 
+            <div class="two">
                 <a id="anchor-show-treemap"><h1>National Identity</h1></a>
                 <button id="show-treemap"><img class='tree-map' src="./images/treemap.jpeg" alt="Name"></button>
             </div> 
-
-            <div>
-                <a id="anchor-show-heatmap"><h1>An Illustration of Damage</h1></a>
-                <button id="show-heatmap"><img class='head-outline' src="./images/head_outline.jpg" alt="Name"></button>
+            <div class="three">
+                <a id="anchor-show-wordcloud"><h1>Weapons of Choice</h1></a>
+                <button id="show-wordcloud"><img class='tree-map' src="./images/treemap.jpeg" alt="Name"></button>
             </div> 
-
+        </div>
       <section class="main-story col col-2-3">
-          <section class="col col-1-3">
+          <!-- <section class="col col-1-3">
             <a href="#"><h1>Launching the New React/Redux Curriculum</h1></a>
             <p class="byline">By APP ACADEMY INSTRUCTIONAL TEAM</p>
             <ul>
@@ -122,9 +129,9 @@
                   To specify how the actions transform the state tree, you write pure reducers.</li>
             </ul>
             <a href="#" class="comments"><i class="fa fa-message"></i>1738 Comments</a>
-          </section>
-          <section class="col col-2-3">
-            <!-- <iframe width="100%" height="300" src="https://www.youtube.com/embed/ARe9FupzuOA" frameborder="0" allowfullscreen></iframe> -->
+          </section> -->
+          <!-- <section class="col col-2-3">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/ARe9FupzuOA" frameborder="0" allowfullscreen></iframe>
             <p>Warning: This video will make you want to change your career</p>
             <article>
               <hr>
@@ -166,7 +173,7 @@
           <p class="byline">By NY OPERATIONS</p>
           <p>The new space features hardwood floors and brick walls for a modern technology space with an aura for learning.</p>
           <div class="thumbnail">
-            <!-- <img src="/assets/new_office.jpg" alt="app academy new york office"> -->
+            <img src="/assets/new_office.jpg" alt="app academy new york office">
           </div>
         </section>
         <section class="opinion-sign-up">
@@ -186,7 +193,7 @@
         </section>
       </section> 
       <section id="overlay" class="overlay hidden"></section>
-    </section>
+    </section> -->
     <div class="heat-map-modal">
     </div>
     <div class="tree-map-modal">

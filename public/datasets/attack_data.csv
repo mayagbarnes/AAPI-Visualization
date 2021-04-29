@@ -1,25 +1,27 @@
 date,state,victim_gender,victim_age,victim_ethnicity,assailant_gender,severity,x,y
-3/28/2020,NY,Female,52,Asian,Female,2,
-3/16/2020,FL,Female,Undefined,Asian,Female,1,
-3/1/2020,NY,Male,Undefined,Asian,Male,1,
-3/10/2020,NY,Male,59,Asian,Male,2,
-3/10/2020,NY,Female,23,Korean,Female,3,
-3/12/2020,NY,Male,47,Asian,Male,2,
-3/14/2020,TX,Male,Undefined,Male,3,
-3/16/2020,NY,Female,34,Asian,Female,2,
-3/21/2020,IL,Male,60,Chinese,Female,1,
-4/4/2020,NJ,Female,55,Asian,Female,2,
-5/3/2020,NY,Male,30,Asian,Male,1,
-5/21/2020,WA,Male,Undefined,Male,2,
-6/13/2020,NY,Male,27,Korean,Male,3,
-7/28/2020,PA,Female,Undefined,Chinese,Female,2,
-11/10/2020,D.C.,Male,29,Chinese,Male,2,
-12/17/2020,NY,Female,32,Asian,Both,3,
-1/22/2020,OR,Female,Undefined,Asian,2,
-1/25/2020,WA,Female,Undefined,Asian,2,
-2/13/2021,CA,Male,36,Asian,Female,1,
-2/15/2021,NY,Male,27,Asian,Male,2,
-2/16/2021,CA,Male,27,Korean,Male,3,
+3/28/2020,NY,Female,52,Asian,Female,2,X,Y,"Female, 52, beaten with umbrella - requiring stitches for cut to head & wounds to body"
+3/16/2020,FL,Female,Undefined,Asian,Female,1,X,Y,""
+3/1/2020,NY,Male,Undefined,Asian,Male,1,X,Y,"Male kicked and punched after being doused with bucket of water"
+3/10/2020,NY,Male,59,Asian,Male,2,X,Y,"Male, 59, kicked in the back, resulting in injuries to hands & knees"
+3/10/2020,NY,Female,23,Korean,Female,3,X,Y,"Female, 23, grabbed by her hair and punched in the face"
+3/12/2020,NY,Male,47,Asian,Male,2,X,Y,"Male, 47, shoved in the back of the head while with 10 year old son"
+3/14/2020,TX,Male,Undefined,Male,3,X,Y,"Father punched in back of head and slashed in the face with a knife"
+3/14/2020,TX,Male,6,Male,3,X,Y,"6 year old boy slashed with knife from right eye to ear"
+3/14/2020,TX,Male,3,Male,3,X,Y,"3 year old boy wounded in back with knife"
+3/16/2020,NY,Female,34,Asian,Female,2,X,Y,"Female, 34, spit on and had chunk of hair torn out"
+3/21/2020,IL,Male,60,Chinese,Female,1,X,Y,"Male, 60, hit by a thrown log and spit on"
+4/4/2020,NJ,Female,55,Asian,Female,2,X,Y,"Female, 55, punched in the back of the head"
+5/3/2020,NY,Male,30,Asian,Male,1,X,Y,"Male, 30, shoved in attempt to remove him from train"
+5/21/2020,WA,Male,Undefined,Male,2,X,Y,"Male spit on, shoved repeatedly, and had glasses slapped off his face"
+6/13/2020,NY,Male,27,Korean,Male,3,X,Y,"Male, 27, spit on, punched in the face and kicked in the leg/groin"
+7/28/2020,PA,Female,Undefined,Chinese,Female,2,X,Y,"Pregnant female punched in the face in front of her 12 year old daughter"
+11/10/2020,D.C.,Male,29,Chinese,Male,2,X,Y,"Male, 29, pepper sprayed in his own store"
+12/17/2020,NY,Female,32,Asian,Both,3,X,Y,"Female, 32, beaten by group of 6, left with battered face and substantial pain"
+1/22/2020,OR,Female,Undefined,Asian,2,X,Y,"Female kicked in the shins while riding bus with her son"
+1/25/2020,WA,Female,Undefined,Asian,2,X,Y,"Female shoved hard and had the wind knocked out of her"
+2/13/2021,CA,Male,36,Asian,Female,1,X,Y,"Male, 36, was accosted and spit on while dining outside"
+2/15/2021,NY,Male,27,Asian,Male,2,X,Y,"Male, 27, knocked to the ground and punched in the face"
+2/16/2021,CA,Male,27,Korean,Male,3,X,Y,"Male Air Force Vet, 27, knocked down and beaten by 2 men, causing a broken nose and black eye"
 2/25/2021,WA,Male,Undefined,White,Male,3,
 2/25/2021,WA,Female,Undefined,Japanese,Male,3,
 3/1/2021,OR,Female,21,Asian,Male,2,
