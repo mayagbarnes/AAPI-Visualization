@@ -1,9 +1,10 @@
 import { includeHTML } from "./includeHTML";
-import { drawHeatMap } from "./show_heatmap";
+import { drawHeatMap } from "./drawHeatmap";
+import { drawTreeMap } from "./drawTreeMap";
+import { drawWordCloud } from "./drawWordCloud";
 
-// This is essentially a a router. If the hash of the window location
-// changes, this file will attempt to load the appropriate HTML file
-// and apply whatever set up is required with a `then` statement
+
+// Main router - If the hash url changes, loads appropriate HTML file
 
 export const router = () => {
   switch (window.location.hash.slice(2)) {
@@ -15,12 +16,18 @@ export const router = () => {
         drawHeatMap();
       });
       return;
-    // case "treemap":
-    //   includeHTML().then(() => {
-    //     drawTreeMap();
-    //   });
-    //   return;
+    case "treemap":
+      includeHTML().then(() => {
+        drawTreeMap();
+      });
+      return;
+    case "wordcloud":
+      includeHTML().then(() => {
+        drawWordCloud();
+      });
+      return;
     default:
+      includeHTML();
       return;
   }
 };

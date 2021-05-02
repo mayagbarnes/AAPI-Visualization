@@ -2,21 +2,25 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-  	border-top: 1px solid $light-gray;
+  	// border-top: 1px solid $light-gray; - this is the border used for language nav
 	border-bottom: 2px solid black;
 	padding-bottom: 5px;
-	padding-top: 5px;
+	// padding-top: 5px;
 	position: relative;
+
+	time {
+		font-weight: 600;
+	}
 
 
 	.weather {
-		width: 150px;
+		width: 175px;
 		font-size: 16px;
 		text-align: center;
 	}
 
 	.date {
-		width: 150px;
+		width: 175px;
 		font-size: 14px;
 		text-align: center;
 	}
@@ -25,25 +29,31 @@
 
 .language-nav {
 	position: absolute;
-	top: -15px;
-	left: calc(50% - (177.78px/2));
+	// top: -15px;
+	top: -25px;
+	left: calc(50% - (275px/2));
 	background: white;
-	border: 1px solid $light-gray;
+	// border: 1px solid $light-gray;
 	border-bottom: none;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 
 
-	a {
-		margin: 0 5px;
-		text-transform: uppercase;
-		font-family: $sans-serif;
-		font-size: 10px;
-		color: $dark-gray;
-	}
+	// a {
+	// 	margin: 0 5px;
+	// 	text-transform: uppercase;
+	// 	font-family: $sans-serif;
+	// 	font-size: 12px;
+	// 	color: $dark-gray;
+	// }
 
 	ul {
 		display: flex;
+		font-size: 14px;
+	}
+
+	li {
+		margin-left: 10px;
 	}
 
 	li a:hover {

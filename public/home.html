@@ -2,11 +2,9 @@
     <nav class="left-nav">
         <ul>
             <li id="sections-sidebar-btn">
-                <i class="fa fa-bars"></i>
                 <span>sections</span>
             </li>
             <li id="search-modal-btn">
-                <i class="fa fa-search"></i>
                 <span>search</span>
             </li>
         </ul>
@@ -20,7 +18,7 @@
             </li>
             <li>
                 <a target="_blank" href="https://www.linkedin.com/in/mayabarnes/" className='header-icons'>
-                    <i class="fab fa-linkedin">LinkedIn</i>
+                    <i class="fab fa-linkedin-in">LinkedIn</i>
                 </a>
             </li>
             <!-- <li id="gear">
@@ -56,10 +54,10 @@
 
     <nav class="language-nav">
         <ul>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">Javascript</a></li>
-            <li><a href="#">Ruby</a></li>
+            <li>U.S.</li>
+            <li>International</li>
+            <li>Español</li>
+            <li>中文</li>
         </ul>
     </nav>
 
@@ -89,107 +87,30 @@
 <section class="main-content group">
     <div class="grid-container">
         <div class="one">
-            <a id="anchor-show-heatmap">
+            <a id="anchor-show-heatmap" href='/#/heatmap'>
                 <h1>An Illustration of Damage</h1>
             </a>
-            <button id="show-heatmap"><img class='head-outline' src="./images/head_outline.jpg" alt="Name"></button>
-            <ul>
-                <li></li>
-            </ul>
-            <ul>
-
-            </ul>
+            <a id="show-heatmap" href='/#/heatmap'><img class='head-outline' src="./images/grandma.jpeg" alt="Name"></a>
+            <p class="heatmap-comments">This past year has seen an unprecedented uptick in harrassment and violence against Asian Americans across the country. These attacks have spanned ethnicities, ages, and geography.</p>
+            <p class="heatmap-comments">Click on the image above to get a more detailed representation of the physical damage suffered by the victims of these atrocious hate crimes. </p>
         </div>
         <div class="two">
-            <a id="anchor-show-treemap">
+            <a id="anchor-show-treemap" href='/#/treemap'>
                 <h1>National Identity</h1>
             </a>
-            <button id="show-treemap"><img class='tree-map' src="./images/treemap.jpeg" alt="Name"></button>
+            <a href='/#/treemap'><img class='tree-map' src="./images/aapi_protest.jpeg" alt="Name"></a>
+            <p class="treemap-comments-1">The organization Stop AAPI Hate compiled a report documenting 3,795 discrimination incidents from March 2020 through February 2021. </p>
+            <p class="treemap-comments-2">Click the image on the right to see a breakdown of ethnicities for the victims.</p>
         </div>
         <div class="three">
-            <a id="anchor-show-wordcloud">
+            <a id="anchor-show-wordcloud" href='/#/wordcloud'>
                 <h1>Weapons of Choice</h1>
             </a>
-            <button id="show-wordcloud"><img class='tree-map' src="./images/treemap.jpeg" alt="Name"></button>
+            <a href='/#/wordcloud' id="show-wordcloud"><img class='word-cloud' src="./images/protest_signs.jpeg" alt="Name"></a>
+            <p class="wordcloud-comments-1">In a small sampling of about 40 violent hate crime incidents documented by the New York Times, over 30% involved the assailant punching the victim, often in the head. </p>
+            <p class="wordcloud-comments-2">In about 25% of these incidents the assailant told the victim to "Go back to your country" or "Go back to China".</p>
+            <p class="wordcloud-comments-2">Around 20% of these incidents involved the assailant accusing the victim of having Covid or blaming them for bringing it to the U.S.</p>
+            <p class="wordcloud-comments-2">Click the image on the left to see an illustration of the physical and verbal nature of these attacks. </p>
         </div>
     </div>
-    <section class="main-story col col-2-3">
-        <!-- <section class="col col-1-3">
-            <a href="#"><h1>Launching the New React/Redux Curriculum</h1></a>
-            <p class="byline">By APP ACADEMY INSTRUCTIONAL TEAM</p>
-            <ul>
-              <li>It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test. On top of that, it provides a great developer experience, such as live code editing combined with a time traveling debugger.</li>
-              <li>The whole state of your app is stored in an object tree inside a single store.
-                  The only way to change the state tree is to emit an action, an object describing what happened.
-                  To specify how the actions transform the state tree, you write pure reducers.</li>
-            </ul>
-            <a href="#" class="comments"><i class="fa fa-message"></i>1738 Comments</a>
-          </section> -->
-        <!-- <section class="col col-2-3">
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/ARe9FupzuOA" frameborder="0" allowfullscreen></iframe>
-            <p>Warning: This video will make you want to change your career</p>
-            <article>
-              <hr>
-              <a href="#"><header>Where Are They Now?</header></a>
-              <p class="byline">By APP ACADEMY ALUMNI</p>
-              <p>First hand stories from App Academy graduates about transitioning to engineering positions at top tech companies in San Francisco.</p>
-            </article>
-            <article>
-              <hr>
-              <a href="#"><header>Cat Academy</header></a>
-              <p class="byline">By APP ACADEMY DIRECTOR OF PRODUCTS</p>
-              <p>App Academy's latest product targets those interested in owning the popular feline companion by providing a curated cat care curriculum.</p>
-            </article>
-          </section>
-            <hr class="hr-top">
-            <hr class="hr-bottom">
-      </section>
-      <section class="opinion cf">
-        <a href="#"><h2>The Opinion Pages</h2></a>
-        <section class="col col-1-2">
-              <p class="kicker">Op-Ed Contributor</p>
-              <a href="#"><header>Will Javascript ever be as easy as Ruby?</header></a>
-              <p>
-                Javscript continues to advance with the newly released EcmaScript7 but it still doesn't quite read like Ruby.
-              </p>
-            <ul class="opinions-list">
-              <li>Torvalds: When I Was Almost Wrong</li>
-              <li>Knuth: Art of Programming</li>
-              <li>Lovelace: The First Algorithm</li>
-              <li>Hopper: The First Bug</li>
-              <li>Thompson: Go C Unix</li>
-              <li>Carmack: My Virtual Reality</li>
-              <li>Stallman: Free Speech Not Free Coffee</li>
-            </ul>
-        </section>
-        <section class="col col-1-2">
-          <p class="kicker">Operations</p>
-          <a href="#"><header>App Academy New York Has A Brand New Office</header></a>
-          <p class="byline">By NY OPERATIONS</p>
-          <p>The new space features hardwood floors and brick walls for a modern technology space with an aura for learning.</p>
-          <div class="thumbnail">
-            <img src="/assets/new_office.jpg" alt="app academy new york office">
-          </div>
-        </section>
-        <section class="opinion-sign-up">
-          <a href="#"><header>Opinion Today, in your Inbox</header></a>
-          <p>Each weekday, get though-provoking commentary from our columnists and contributors.</p>
-          <form>
-            <section class="input-wrapper">
-              <input type="text" placeholder="Get the Opinion newsletter by email">
-              <button>Sign Up</button>
-            </section>
-          </form>
-          <center>
-            <small>We'll also send offers to join the App Academy Bootcamp. You can never unsubscribe.</small>
-          </center>
-          <hr class="hr-top">
-          <hr class="hr-bottom">
-        </section>
-      </section> 
-      <section id="overlay" class="overlay hidden"></section>
-    </section> -->
-<div class="heat-map-modal">
-</div>
-<div class="tree-map-modal">
-</div>
+</section>

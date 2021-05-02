@@ -8,72 +8,62 @@ class HeatmapBackground {
     const shoulderWidth = 900;
     const headHeight = 600;
 
-    // black background
-    this.svg
-      .append("rect")
-      .attr("x", 0)
-      .attr("y", 0)
-      .attr("width", shoulderWidth)
-      .attr("height", headHeight)
-      .attr("background", "url('./images/body_outline.jpg')")
-      .attr("fill", "transparent");
-
     // legend - minor
     this.svg
       .append("rect")
-      .attr("x", 800)
-      .attr("y", 550)
+      .attr("x", 90)
+      .attr("y", 575)
       .attr("width", 50)
-      .attr("height", 12)
+      .attr("height", 16)
       .attr("fill", "#c64756");
 
     this.svg
       .append("text")
-      .attr("x", 758)
-      .attr("y", 555)
-      .attr("font-size", 14)
+      .attr("x", 0)
+      .attr("y", 580)
+      .attr("font-size", 22)
       .attr("dy", ".35em")
       .attr("font-family", "Oswald")
       .text("Minor")
-      .style("fill", "#D5D5D5");
+      .style("fill", "black");
 
     // legend - moderate
     this.svg
       .append("rect")
-      .attr("x", 800)
-      .attr("y", 530)
+      .attr("x", 90)
+      .attr("y", 605)
       .attr("width", 50)
-      .attr("height", 12)
+      .attr("height", 16)
       .attr("fill", "#7b113a");
 
     this.svg
       .append("text")
-      .attr("x", 740)
-      .attr("y", 535)
+      .attr("x",0)
+      .attr("y", 610)
       .attr("dy", ".35em")
-      .attr("font-size", 14)
+      .attr("font-size", 22)
       .attr("font-family", "Oswald")
       .text("Moderate")
-      .style("fill", "#D5D5D5");
+      .style("fill", "black");
 
     // legend - severe
     this.svg
       .append("rect")
-      .attr("x", 800)
-      .attr("y", 510)
+      .attr("x", 90)
+      .attr("y", 635)
       .attr("width", 50)
-      .attr("height", 12)
-      .attr("fill", "#301b3f");
+      .attr("height", 16)
+      .attr("fill", "#593275");
 
     this.svg
       .append("text")
-      .attr("x", 755)
-      .attr("y", 515)
+      .attr("x", 0)
+      .attr("y", 640)
       .attr("dy", ".35em")
-      .attr("font-size", 14)
+      .attr("font-size", 22)
       .attr("font-family", "Oswald")
       .text("Severe")
-      .style("fill", "#D5D5D5");
+      .style("fill", "black");
   }
 }
 

@@ -3,19 +3,6 @@ class Treemap {
         this.svg = svg;
         this.width = width;
         this.height = height;
-            // // set the dimensions and margins of the graph
-            // var margin = {top: 10, right: 10, bottom: 10, left: 10},
-            // width = 445 - margin.left - margin.right,
-            // height = 445 - margin.top - margin.bottom;
-
-            // // append the svg object to the body of the page
-            // var svg = d3.select("#my_dataviz")
-            // .append("svg")
-            // .attr("width", width + margin.left + margin.right)
-            // .attr("height", height + margin.top + margin.bottom)
-            // .append("g")
-            // .attr("transform",
-            //         "translate(" + margin.left + "," + margin.top + ")");
     }
 
     render() {
@@ -73,7 +60,7 @@ class Treemap {
                 .attr("font-weight", "700")
                 .attr("fill", "black")
 
-             // attempting to add pattern to the rectangle to get flag
+             //add patterns to the rectangle to get flags to be filled
 
             this.svg
                 .data(treeData.leaves()[5])
@@ -133,8 +120,8 @@ class Treemap {
                     .attr("xlink:href", '../images/korean_flag_1.jpeg')
                     .attr("width", function (d) { return d.x1; })
                     .attr("height", function (d) { return d.y1 - d.y0 - 20; })
-                    .attr("x", function (d) { return d.x0; })
-                    .attr("y", function (d) { return d.y0 + 10; }); 
+                    .attr("x", function (d) { return d.x0 + 20; })
+                    .attr("y", function (d) { return d.y0 + 5; }); 
 
             this.svg
                 .data(treeData.leaves()[0])

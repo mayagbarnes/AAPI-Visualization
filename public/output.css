@@ -95,9 +95,6 @@ h2 {
   margin-bottom: 10px;
   font-weight: bold; }
 
-p {
-  line-height: 16px; }
-
 img {
   width: 100%;
   height: 100%; }
@@ -205,49 +202,103 @@ input[type="search"] {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px 400px; }
+  grid-template-rows: 400px 500px; }
 
 .one {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  text-align: center;
+  text-align: justify;
   border-bottom: 2px solid #e2e2e2;
   border-right: 2px solid #e2e2e2;
-  padding-top: 10px; }
+  padding: 10px;
+  padding-top: 5px;
+  padding-right: 25px; }
   .one button {
     border-color: inherit;
     background-color: inherit; }
   .one img {
-    height: 50%;
-    width: 70%;
-    margin: 0 auto; }
+    height: 235px;
+    width: 325px;
+    float: right;
+    margin-left: 20px;
+    margin-top: 5px; }
+  .one img:hover {
+    box-shadow: 0 0 3px 3px #6288a5; }
+  .one h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px; }
+  .one p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px; }
 
 .two {
   grid-column: 2 / span 1;
   grid-row: 1;
-  text-align: center;
-  padding-top: 10px;
+  text-align: justify;
+  padding: 10px;
+  padding-top: 5px;
   border-bottom: 2px solid #e2e2e2; }
   .two button {
     border-color: inherit;
     background-color: inherit; }
   .two img {
-    height: 70%;
-    width: 45%;
-    float: right; }
+    height: 200px;
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 15px; }
+  .two img:hover {
+    box-shadow: 0 0 3px 3px #6288a5; }
+  .two h1 {
+    font-size: 30px;
+    text-align: center; }
+  .two .treemap-comments-1 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-left: 10px; }
+  .two .treemap-comments-2 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 10px; }
 
 .three {
   grid-column: 1 / span 2;
   grid-row: 2;
-  text-align: center;
+  text-align: justify;
   padding-top: 20px;
-  border-bottom: 3px double #999; }
+  border-bottom: 3px double #999;
+  padding: 20px; }
   .three button {
     border-color: inherit;
     background-color: inherit; }
   .three img {
-    height: 35%;
-    width: 25%; }
+    height: 390px;
+    width: 600px;
+    float: left;
+    margin-right: 50px;
+    margin-left: 10px;
+    margin-top: 10px; }
+  .three img:hover {
+    box-shadow: 0 0 3px 3px #6288a5; }
+  .three h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 15px; }
+  .three .wordcloud-comments-1 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-right: 30px; }
+  .three .wordcloud-comments-2 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-right: 30px; }
 
 .main-story {
   margin-top: 10px; }
@@ -301,7 +352,8 @@ article {
 .main-nav {
   display: flex;
   justify-content: space-between;
-  padding: 10px; }
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .left-nav > ul,
 .right-nav > ul {
@@ -334,37 +386,33 @@ article {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #e2e2e2;
   border-bottom: 2px solid black;
   padding-bottom: 5px;
-  padding-top: 5px;
   position: relative; }
+  .masthead time {
+    font-weight: 600; }
   .masthead .weather {
-    width: 150px;
+    width: 175px;
     font-size: 16px;
     text-align: center; }
   .masthead .date {
-    width: 150px;
+    width: 175px;
     font-size: 14px;
     text-align: center; }
 
 .language-nav {
   position: absolute;
-  top: -15px;
-  left: calc(50% - (177.78px/2));
+  top: -25px;
+  left: calc(50% - (275px/2));
   background: white;
-  border: 1px solid #e2e2e2;
   border-bottom: none;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px; }
-  .language-nav a {
-    margin: 0 5px;
-    text-transform: uppercase;
-    font-family: arial, helvetica, sans-serif;
-    font-size: 10px;
-    color: #6f6f6f; }
   .language-nav ul {
-    display: flex; }
+    display: flex;
+    font-size: 14px; }
+  .language-nav li {
+    margin-left: 10px; }
   .language-nav li a:hover {
     text-decoration: underline #6f6f6f; }
   .language-nav li:first-child {
@@ -410,22 +458,21 @@ article {
 .section {
   border-bottom: 1px solid #e2e2e2;
   font-family: arial, helvetica, sans-serif;
-  font-size: 12px; }
+  font-size: 16px; }
   .section ul {
     display: flex;
     justify-content: center;
-    padding: 10px; }
+    padding: 7px; }
   .section ul li {
     display: flex;
-    margin-right: 20px; }
+    margin-right: 20px;
+    padding: 5px; }
   .section li:hover {
-    background-color: #e2e2e2; }
-  .section li:last-child {
-    font-size: 10px;
-    align-items: center; }
-  .section li:last-child:hover {
-    text-decoration: underline black;
-    background-color: transparent; }
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    font-weight: 500; }
+  .section a:hover {
+    text-decoration: none; }
 
 .heat-map-modal > svg {
   background-image: url("../images/body_outline.jpeg");
@@ -453,5 +500,137 @@ rect.Other {
 
 rect.Asian {
   fill: #256bb6; }
+
+text.Words {
+  font-weight: 500;
+  font-size: 32px; }
+
+text.Go {
+  font-weight: 600;
+  font-size: 12px; }
+
+text.Punched {
+  font-weight: 500;
+  font-size: 20px; }
+
+text.You {
+  font-weight: 500;
+  font-size: 14px; }
+
+text.Beaten {
+  font-weight: 500;
+  font-size: 16px; }
+
+text.Shoved {
+  font-weight: 500;
+  font-size: 18px; }
+
+text.Spit {
+  font-weight: 500;
+  font-size: 20px; }
+
+text.Kicked {
+  font-weight: 500;
+  font-size: 18px; }
+
+text.Pepper {
+  font-weight: 400;
+  font-size: 12px; }
+
+text.Hair {
+  font-weight: 500;
+  font-size: 14px; }
+
+text.Knife {
+  font-weight: 500;
+  font-size: 14px; }
+
+.home-button-container {
+  display: flex;
+  justify-content: flex-end; }
+  .home-button-container button {
+    background-color: #326891;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 10px; }
+  .home-button-container a:hover {
+    text-decoration: none; }
+  .home-button-container button:hover {
+    color: #e2e2e2; }
+
+.tree-map-title {
+  display: flex;
+  justify-content: center; }
+  .tree-map-title h1 {
+    font-size: 34px;
+    margin-bottom: 20px; }
+
+.tree-map-body {
+  display: flex;
+  font-size: 22px; }
+  .tree-map-body .tree-map-info {
+    margin-left: 20px;
+    margin-top: 10px; }
+    .tree-map-body .tree-map-info .heat-map-tooltip {
+      margin-top: 30px;
+      font-size: 20px; }
+      .tree-map-body .tree-map-info .heat-map-tooltip .date {
+        font-weight: 600;
+        padding-top: 50px; }
+      .tree-map-body .tree-map-info .heat-map-tooltip .severity {
+        font-weight: 600;
+        padding-bottom: 10px; }
+      .tree-map-body .tree-map-info .heat-map-tooltip .description {
+        font-weight: 600;
+        padding-bottom: 10px; }
+    .tree-map-body .tree-map-info p {
+      text-align: justify;
+      margin-top: 20px; }
+    .tree-map-body .tree-map-info table {
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 30px;
+      border: 2px solid #999;
+      border-radius: 7px;
+      padding: 15px; }
+      .tree-map-body .tree-map-info table th {
+        padding: 5px;
+        font-size: 22px;
+        border-bottom: 2px solid #e2e2e2; }
+      .tree-map-body .tree-map-info table .ethnicity {
+        padding: 5px;
+        text-align: left;
+        font-size: 20px;
+        border-bottom: 1px solid #e2e2e2; }
+      .tree-map-body .tree-map-info table .percentage {
+        padding: 5px;
+        font-size: 20px;
+        border-bottom: 1px solid #e2e2e2; }
+
+.word-cloud-body {
+  display: flex;
+  font-size: 22px; }
+  .word-cloud-body .word-cloud-modal {
+    margin-top: 30px; }
+  .word-cloud-body .word-cloud-info {
+    margin-top: 0px; }
+    .word-cloud-body .word-cloud-info p {
+      text-align: justify;
+      margin-top: 20px; }
+    .word-cloud-body .word-cloud-info ul {
+      margin: 0 auto;
+      margin-top: 20px; }
+      .word-cloud-body .word-cloud-info ul li {
+        list-style-type: square;
+        font-size: 20px;
+        padding: 4px;
+        margin-left: 20px; }
+      .word-cloud-body .word-cloud-info ul .list-section {
+        font-size: 22px;
+        font-weight: 700;
+        padding: 10px;
+        margin-top: 20px;
+        list-style-type: none;
+        text-align: center; }
 
 /*# sourceMappingURL=output.css.map */

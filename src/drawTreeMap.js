@@ -1,8 +1,10 @@
+import Treemap from "./treemap";
+
 export function drawTreeMap() {
   // set the dimensions and margins of the graph
   var margin = { top: 10, right: 10, bottom: 10, left: 10 },
-    width = 900 - margin.left - margin.right,
-    height = 900 - margin.top - margin.bottom;
+    width = 700 - margin.left - margin.right,
+    height = 700 - margin.top - margin.bottom;
 
   // append the svg object to the body of the page
   let svg = d3

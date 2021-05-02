@@ -1,0 +1,231 @@
+.heat-map-modal>svg {
+    background-image: url("../images/body_outline.jpeg");
+    background-repeat: no-repeat;
+    background-size: 90%, 90%;
+    background-position: center;
+}
+
+rect.Chinese {
+  fill: url(#chinese);
+}
+
+rect.Korean {
+  fill: url(#korean);
+}
+
+rect.Vietnamese {
+  fill: url(#vietnamese);
+}
+
+rect.Filipino {
+  fill: url(#filipino);
+}
+
+rect.Japanese {
+  fill: url(#japanese);
+}
+
+rect.Other {
+  fill: rgb(20, 131, 33);
+}
+
+rect.Asian {
+  fill: rgb(37, 107, 182);
+}
+
+
+// Word Cloud text w/in bubbles
+text.Words {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+text.Go {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+text.Punched {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+text.You {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+text.Beaten {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+text.Shoved {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+
+text.Spit {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+text.Kicked {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+
+text.Pepper {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+
+text.Hair {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+text.Knife {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.home-button-container {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    background-color: $blue;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 10px
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  button:hover {
+    color: $light-gray;
+  }
+}
+
+.tree-map-title {
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+}
+
+.tree-map-body {
+  display: flex;
+  font-size: 22px;
+
+  .tree-map-info {
+    margin-left: 20px;
+    margin-top: 10px;
+
+    .heat-map-tooltip {
+        margin-top: 30px;
+        font-size: 20px;
+
+      .date {
+        font-weight: 600;
+        padding-top: 50px;
+      }
+
+      .severity {
+        font-weight: 600;
+        padding-bottom: 10px;
+      }
+
+      .description {
+        font-weight: 600;
+        padding-bottom: 10px;
+      }
+
+    }
+
+    p {
+      text-align: justify;
+      margin-top: 20px;
+    }
+
+    table {
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 30px;
+      border: 2px solid $gray;
+      border-radius: 7px;
+      padding: 15px;
+
+      th {
+        padding: 5px;
+        font-size: 22px;
+        border-bottom: 2px solid $light-gray;
+      }
+
+      .ethnicity {
+        padding: 5px;
+        text-align: left;
+        font-size: 20px;
+        border-bottom: 1px solid $light-gray;
+      }
+
+      .percentage {
+        padding: 5px;
+        font-size: 20px;
+        border-bottom: 1px solid $light-gray;
+      }
+    }
+  }
+}
+
+.word-cloud-body {
+  display: flex;
+  font-size: 22px;
+
+  .word-cloud-modal {
+    margin-top: 30px;
+  }
+
+  .word-cloud-info {
+    margin-top: 0px;
+
+    p {
+      text-align: justify;
+      margin-top: 20px;
+    }
+
+    ul {
+      margin: 0 auto;
+      margin-top: 20px;
+
+      li {
+        list-style-type: square;
+        font-size: 20px;
+        padding: 4px;
+        margin-left: 20px;
+      }
+
+      .list-section {
+        font-size: 22px;
+        font-weight: 700;
+        padding: 10px;
+        margin-top: 20px;
+        list-style-type: none;
+        text-align: center;
+      }
+
+    }
+  }
+}
