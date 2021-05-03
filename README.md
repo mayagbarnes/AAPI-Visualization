@@ -2,6 +2,14 @@
 
 [Stop Asian Hate](https://stop-asian-hate.herokuapp.com/) is intended to provide 3 unique visualizations of Asian American hate crimes over the last year. 
 
+## Technologies & Hosting
+
+Stop Asian Hate is hosted on Heroku and incorporates the following technologies:
+* Vanilla JavaScript
+* D3
+* HTML
+* SASS
+
 ## Features
 
 * **Victim Damage**
@@ -15,11 +23,3 @@
 * **Physical & Verbal Nature of Attacks**
   * Word cloud visualization of the physical and verbal themes from ~40 headline-making assaults compiled by the New York Times
 <p align="center"><img width="400" alt="Screen Shot 2021-05-02 at 9 55 21 PM" src="https://user-images.githubusercontent.com/63436329/116842471-8979ca80-ab91-11eb-9e92-42917a3c0dce.png"></p>
-
-## Technologies & Hosting
-
-Stop Asian Hate is hosted on Heroku and incorporates the following technologies:
-* Vanilla JavaScript
-* D3
-* HTML
-* SASS
