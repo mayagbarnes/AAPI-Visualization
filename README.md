@@ -1,4 +1,4 @@
- <img src="https://github.com/mayagbarnes/StopAsianHate/blob/main/public/images/logo.png" width="260" height="85">
+ <img src="https://github.com/mayagbarnes/StopAsianHate/blob/main/public/images/logo.png" width="280" height="85">
 
 [Stop Asian Hate](https://stop-asian-hate.herokuapp.com/) is intended to provide 3 unique visualizations of Asian American hate crimes over the last year. 
 
