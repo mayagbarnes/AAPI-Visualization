@@ -10,7 +10,7 @@
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 400px 500px;
+	grid-template-rows: 2fr 2.5fr;
 }
 
 .one {
@@ -29,10 +29,11 @@
 	}
 
 	img {
-		height: 235px;
-		width: 325px;
+		height: 200px;
+		width: 275px;
 		float: right;
 		margin-left: 20px;
+		margin-bottom: 20px;
 		margin-top: 5px;
 	}
 
@@ -46,12 +47,24 @@
 		padding-bottom: 10px;
 	}
 
-	p {
+	.heatmap-comments-1 {
 		font-size: 18px;
 		font-weight: 400;
-		margin-top: 10px;
+		padding-top: 15px;
 		padding-left: 10px;
-		padding-right: 20px;
+	}
+
+	.heatmap-comments-2 {
+		font-size: 18px;
+		font-weight: 400;
+		padding-top: 15px;
+		padding-left: 10px;
+		padding-bottom: 20px;
+
+		span {
+			font-weight: 600;
+			color: #2867B2;
+		}
 	}
 }
 
@@ -62,6 +75,7 @@
   padding: 10px;
   padding-top: 5px;
   border-bottom: 2px solid $light-gray;
+  padding-left: 25px;
 
   	button {
 		border-color: inherit;
@@ -71,10 +85,10 @@
 	img {
 		height: 200px;
 		width: 340px;
-		// float: right;
-		margin: 0 auto;
-		margin-top: 15px;
-		// margin-left: 25px;
+		float: right;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		margin-top: 5px;
 	}
 
 	img:hover {
@@ -84,6 +98,7 @@
 	h1 {
 		font-size: 30px;
 		text-align: center;
+		padding-bottom: 10px;
 	}
 
 	.treemap-comments-1 {
@@ -96,8 +111,14 @@
 	.treemap-comments-2 {
 		font-size: 18px;
 		font-weight: 400;
-		padding-top: 10px;
+		padding-top: 15px;
 		padding-left: 10px;
+		padding-bottom: 20px;
+
+		span {
+			font-weight: 600;
+			color: #2867B2;
+		}
 	}
 
 }
@@ -108,7 +129,9 @@
   text-align: justify;
   padding-top: 20px;
   border-bottom: 3px double $gray;
-  padding: 20px;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
 
 	button {
 		border-color: inherit;
@@ -116,12 +139,12 @@
 	}
 
 	img {
-		height: 390px;
-		width: 600px;
+		height: 330px;
+		width: 550px;
 		float: left;
 		margin-right: 50px;
-		margin-left: 10px;
-		margin-top: 10px;
+		margin-left: 40px;
+		margin-top: 5px;
 	}
 
 	img:hover {
@@ -131,21 +154,19 @@
 	h1 {
 		font-size: 30px;
 		text-align: center;
-		padding-bottom: 15px;
+		padding-bottom: 10px;
 	}
 
-	.wordcloud-comments-1 {
+	.wordcloud-comments {
 		font-size: 18px;
 		font-weight: 400;
 		padding-top: 15px;
 		padding-right: 30px;
-	}
 
-	.wordcloud-comments-2 {
-		font-size: 18px;
-		font-weight: 400;
-		padding-top: 20px;
-		padding-right: 30px;
+		span {
+			font-weight: 600;
+			color: #2867B2;
+		}
 	}
 }
 

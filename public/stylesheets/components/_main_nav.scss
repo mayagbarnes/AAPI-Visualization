@@ -23,10 +23,6 @@
       padding: 6px;
     }
   }
-
-  span {
-
-  }
 }
 
 .right-nav  {
@@ -35,21 +31,42 @@
 
     > li {
       margin-right: 2px;
+      margin-left: 5px;
+      padding: 5px;
+      font-size: 20px;
     }
 
-    > li:last-of-type {
-      font-size: 16px;
-      padding: 4px;
+    span {
+      font-size: 20px;
+      font-weight: 500;
+      margin-left: 5px;
+      color: black;
+      font-family: arial, helvetica, sans-serif;
     }
+  }
+
+  .fa-linkedin {
+    color: #2867B2;
+    font-size: 24px;
+  }
+
+  .fa-github {
+    font-size: 24px;
   }
   
-  i {
+  // i {
 
-  }
+  // }
 }
 
 .left-nav > ul > li:hover,
-.right-nav > ul > li:last-of-type:hover {
+.right-nav > ul > li:hover {
   background-color: $light-gray;
   border-radius: 3px;
+}
+
+.right-nav {
+  a {
+    text-decoration: none;
+  }
 }
