@@ -1,22 +1,20 @@
-# Simple Node API Backend
+ <img src="https://github.com/mayagbarnes/StopAsianHate/blob/main/public/images/logo.png" width="260" height="85">
 
-Simple Node Backend for avoiding CORS issues in development
-- npm install
-- npm run build
-- npm start
+[Stop Asian Hate](https://stop-asian-hate.herokuapp.com/) is intended to provide 3 unique visualizations of Asian American hate crimes over the last year. 
 
-Technologies
-- express
-- axios
-- webpack
+## Features
 
-Implementation
+* **Victim Damage**
+  * Scatterplot illustration showing the physical damage suffered by victims from ~40 headline-making assaults compiled by the New York Times
+* **Victim Ethnicity**
+  * Treemap Breakdown of ethnicities from the 3,795 discrimination incidents reported to the organization Stop AAPI Hate
+* **Physical & Verbal Nature of Attacks**
+  * Word cloud visualization of the physical and verbal themes from ~40 headline-making assaults compiled by the New York Times
 
-This project allows you to serve your HTML and JS from a custom backend that performs API requests to an external API.
+## Technologies & Hosting
 
-app.js contains the routes that you need to get your data. Customize them according to the paths you wish to use in your code, and the API you wish to access
-
-Write your JS in the javascripts folder; your entry file is index.js.
-
-In the entry file 
-# AAPI-Visualization
+Stop Asian Hate is hosted on Heroku and incorporates the following technologies:
+* Vanilla JavaScript
+* D3
+* HTML
+* SASS
