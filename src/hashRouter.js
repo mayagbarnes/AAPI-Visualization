@@ -20,18 +20,21 @@ export const router = () => {
       includeHTML().then(() => {
         getToday();
         drawHeatMap();
+        getWeather();
       });
       return;
     case "ethnicities":
       includeHTML().then(() => {
         getToday();
         drawTreeMap();
+        getWeather();
       });
       return;
     case "weapons":
       includeHTML().then(() => {
         getToday();
         drawWordCloud();
+        getWeather();
       });
       return;
     default:

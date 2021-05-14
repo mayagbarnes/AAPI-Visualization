@@ -35,8 +35,9 @@ class WordCloud {
             
             // Build chart
             var bubble = d3.pack(dataset)
-                .size([600, 600])
+                .size([650, 650])
                 .padding(1.5);
+
 
             // Organize circles with sort
             var nodes = d3.hierarchy(dataset)
@@ -58,7 +59,7 @@ class WordCloud {
 
             // Build bubbles
             node.append("circle")
-                .attr("r", function(d) {return d.r;})
+                .attr("r", function(d) {return d.r})
                 .attr("class", function(d) { return d.data.Name.split(" ")[0]})
                 .style("fill", function(d) { return color[d.data.Name.split(" ")[0]]});
 
