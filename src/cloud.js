@@ -14,7 +14,7 @@ class WordCloud {
                             {"Name":"Punched","Count":13},
                             {"Name":"Hair Pulled","Count":3},
                             {"Name":"Shoved","Count":6},
-                            {"Name":"Knife","Count":3},
+                            {"Name":"Stabbed","Count":3},
                             {"Name":"Pepper Spray","Count":3},
                             {"Name":"Go back to your country!","Count":10},
                             {"Name":"You have Covid!","Count":7}]

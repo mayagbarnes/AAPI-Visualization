@@ -11,8 +11,17 @@
 
 	.weather {
 		width: 175px;
-		font-size: 16px;
+		font-size: 14px;
 		text-align: center;
+
+		.location {
+			font-weight: 600;
+		}
+
+		.weather-display {
+			margin-top: 3px;
+			margin-bottom: 10px;
+		}
 	}
 
 	.date {

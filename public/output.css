@@ -54,7 +54,7 @@ html {
   height: 100%; }
 
 body {
-  width: 80%;
+  width: 87%;
   margin: 0 auto;
   font-family: georgia, "times new roman", times, serif;
   font-size: 12px; }
@@ -370,7 +370,8 @@ article {
   display: flex;
   justify-content: space-between;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  margin-top: 1%; }
 
 .left-nav > ul,
 .right-nav > ul {
@@ -392,7 +393,8 @@ article {
     margin-right: 2px;
     margin-left: 5px;
     padding: 5px;
-    font-size: 20px; }
+    font-size: 20px;
+    margin-bottom: 20px; }
   .right-nav > ul span {
     font-size: 20px;
     font-weight: 500;
@@ -422,8 +424,13 @@ article {
   position: relative; }
   .masthead .weather {
     width: 175px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center; }
+    .masthead .weather .location {
+      font-weight: 600; }
+    .masthead .weather .weather-display {
+      margin-top: 3px;
+      margin-bottom: 10px; }
   .masthead .date {
     width: 175px;
     font-size: 14px;

@@ -2,6 +2,8 @@ import { includeHTML } from "./includeHTML";
 import { drawHeatMap } from "./drawHeatmap";
 import { drawTreeMap } from "./drawTreeMap";
 import { drawWordCloud } from "./drawWordCloud";
+import { getToday, getWeather } from "./date_weather";
+
 
 
 // Main router - If the hash url changes, loads appropriate HTML file
@@ -9,25 +11,34 @@ import { drawWordCloud } from "./drawWordCloud";
 export const router = () => {
   switch (window.location.hash.slice(2)) {
     case "home":
-      includeHTML();
-      return;
-    case "heatmap":
       includeHTML().then(() => {
+        getToday();
+        getWeather();
+      });
+      return;
+    case "injuries":
+      includeHTML().then(() => {
+        getToday();
         drawHeatMap();
       });
       return;
-    case "treemap":
+    case "ethnicities":
       includeHTML().then(() => {
+        getToday();
         drawTreeMap();
       });
       return;
-    case "wordcloud":
+    case "weapons":
       includeHTML().then(() => {
+        getToday();
         drawWordCloud();
       });
       return;
     default:
-      includeHTML();
+      includeHTML().then(() => {
+        getToday();
+        getWeather();
+      });
       return;
   }
 };
