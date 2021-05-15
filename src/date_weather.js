@@ -17,7 +17,7 @@ export function getToday() {
 }
 
 export function getWeather() {
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=San%20Francisco&appid=d142dda5f5872d98aba1320657efd1e1&units=imperial')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=San%20Francisco&appid=d142dda5f5872d98aba1320657efd1e1&units=imperial')
         .then((response) => response.json())
         .then(data => showWeather(data.weather[0].description, data.main.temp));    
 }
