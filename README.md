@@ -23,7 +23,7 @@ Stop Asian Hate is hosted on Heroku and incorporates the following technologies:
 
 * **D3.js Bubble Chart**
   * Visualization of the physical and verbal themes from ~40 headline-making assaults compiled by the New York Times
-<p align="center"><img width="400" alt="Wordcloud" src="https://user-images.githubusercontent.com/63436329/118705718-6c6a0c00-b7cd-11eb-8cbf-0343f3cdbbeb.png"></p>
+<p align="center"><img width="400" alt="Wordcloud" src="https://user-images.githubusercontent.com/63436329/118714746-9a544e00-b7d7-11eb-8c86-cb303d633da6.png"></p>
 
 * **Resources & OpenWeather API**
   * Links to resources, including those to learn more about the Stop Asian Hate movement, donate to the cause, and report hate incidents
