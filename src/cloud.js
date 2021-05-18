@@ -27,11 +27,11 @@ class WordCloud {
                         "Punched" : "#206a5d", 
                         "Hair" : "#c73490",
                         "Shoved" : "#ff6701",
-                        "Stabbed" : "#7b22a1", 
+                        "Stabbed" : "#a43bd1", 
                         "Pepper" : "#81b214",
                         "Go" : "#cf0000", 
                         "You" : "#ffb037" }
-                // "Stabbed" : "#81b214", 
+                // "Stabbed" : "#7b22a1", 
                 // "Pepper" : "#217da3",
             
             // Build chart
