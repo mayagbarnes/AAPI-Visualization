@@ -26,12 +26,13 @@ class WordCloud {
                         "Kicked" : "#2978b5", 
                         "Punched" : "#206a5d", 
                         "Hair" : "#c73490",
-                        "Shoved" : "#ff6701", 
-                        "Stabbed" : "#81b214", 
-                        "Pepper" : "#217da3",
+                        "Shoved" : "#ff6701",
+                        "Stabbed" : "#db8e27", 
+                        "Pepper" : "#81b214",
                         "Go" : "#cf0000", 
                         "You" : "#ffb037" }
-
+                // "Stabbed" : "#81b214", 
+                // "Pepper" : "#217da3",
             
             // Build chart
             var bubble = d3.pack(dataset)
