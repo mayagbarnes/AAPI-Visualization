@@ -1,5 +1,5 @@
 export const includeHTML = () => {
-  var z, i, elmnt, file, filename, xhttp;
+  var z, i, elmnt, file;
   /* Loop through a collection of all HTML elements: */
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {

@@ -3,7 +3,7 @@ import { drawHeatMap } from "./drawHeatmap";
 import { drawTreeMap } from "./drawTreeMap";
 import { drawWordCloud } from "./drawWordCloud";
 import { getToday, getWeather } from "./date_weather";
-
+// import { getWeather } from "./xml_test";
 
 
 // Main router - If the hash url changes, loads appropriate HTML file
