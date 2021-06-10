@@ -428,9 +428,14 @@ article {
     text-align: center; }
     .masthead .weather .location {
       font-weight: 600; }
+    .masthead .weather .weather-icon {
+      font-size: 24px;
+      margin-right: 6px; }
     .masthead .weather .weather-display {
       margin-top: 3px;
-      margin-bottom: 10px; }
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .masthead .date {
     width: 175px;
     font-size: 14px;
@@ -438,8 +443,7 @@ article {
     .masthead .date time {
       font-weight: 600; }
     .masthead .date p {
-      margin-top: 3px;
-      margin-bottom: 10px; }
+      margin-top: 8px; }
 
 .language-nav {
   position: absolute;
