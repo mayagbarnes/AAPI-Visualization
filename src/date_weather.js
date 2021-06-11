@@ -23,8 +23,7 @@ export function getWeather() {
 }
 
 function showWeather(status, desc, temp) {
-    // let icon = chooseIcon(status, desc);
-    let icon = chooseIcon('Clouds', 'broken');
+    let icon = chooseIcon(status, desc);
 
     let elements = document.getElementsByClassName("weather-display")
     let temperature = temp.toFixed(0);
