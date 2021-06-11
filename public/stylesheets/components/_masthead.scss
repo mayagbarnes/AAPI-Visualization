@@ -18,9 +18,16 @@
 			font-weight: 600;
 		}
 
+		.weather-icon {
+			font-size: 24px;
+			margin-right: 6px;
+		}
+
 		.weather-display {
 			margin-top: 3px;
-			margin-bottom: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 
@@ -34,8 +41,7 @@
 		}
 
 		p {
-			margin-top: 3px;
-			margin-bottom: 10px;
+			margin-top: 8px;
 		}
 	}
 
